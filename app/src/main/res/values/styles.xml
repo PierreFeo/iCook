@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Widget.AppTheme.LikeButton" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <!-- My custom style LikeButtonIcon. -->
+        <item name="iconTint">@color/like_checkbox_tint</item>
+        <item name="android:minWidth">@dimen/icon_button_min_size</item>
+        <item name="android:minHeight">@dimen/icon_button_min_size</item>
+        <item name="android:paddingStart">@dimen/icon_button_padding</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:textColor">?attr/colorControlNormal</item>
+        <item name="rippleColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Widget.AppTheme.IconButton" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <!-- My custom style icon. -->
+        <item name="iconTint">?attr/colorControlNormal</item>
+        <item name="android:minWidth">@dimen/icon_button_min_size</item>
+        <item name="android:minHeight">@dimen/icon_button_min_size</item>
+        <item name="android:paddingStart">@dimen/icon_button_padding</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:textColor">?attr/colorControlNormal</item>
+        <item name="rippleColor">@android:color/transparent</item>
+        <item name="android:paddingEnd">@dimen/icon_button_padding</item>
+
+    </style>
+
+    <style name="Widget.AppTheme.PlayButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <!-- For youtube play button -->
+        <item name="maxImageSize">42dp</item>
+        <item name="backgroundTint">@color/play_media_icon</item>
+        <item name="tint">@android:color/white</item>
+        <item name="elevation">50dp</item>
+        <item name="borderWidth">@dimen/design_fab_border_width</item>
+
+
+
+
+
+
+
+
+
+    </style>
+
+</resources>

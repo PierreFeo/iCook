@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_spacing_16dp">16dp</dimen>
+    <dimen name="common_spacing_24dp">24dp</dimen>
+    <dimen name="common_spacing_48dp">48dp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_32sp">32sp</dimen>
+    <dimen name="icon_button_min_size">48dp</dimen>
+    <dimen name="icon_button_padding">12dp</dimen>
+</resources>
