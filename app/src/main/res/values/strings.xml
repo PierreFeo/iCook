@@ -2,6 +2,50 @@
     <string name="app_name">icook</string>
     <string name="title">PUMPKIN SOUP</string>
     <string name="title_dsc">A classic, super easy pumpkin soup that fast to make. Thick, creamy and dreamy, with sweet pumpkin flavour and great savoury undertones!</string>
+    <string name="search">search</string>
+    <string name="filter">Filter</string>
+    <string name="favorites">Favorites</string>
+    <string name="add">add</string>
+    <string name="allrecpies">all recipes</string>
+    <string name="recipe_title">Recipe title"</string>
+    <string name="author_recipe">Author</string>
+    <string name="category_recipe">Recipe category</string>
+    <string name="category_menu">Recipe category</string>
+    <string name="add_image">Add image file</string>
+    <string name="save_recipe">Save recipe</string>
+    <string name="recipe_content">Enter text recipe here..</string>
+    <string name="remove">Remove</string>
+    <string name="edit">Edit</string>
+    <string name="cant_be_empty">Cannot be empty</string>
+    <string name="recipes">Recipes</string>
+    <string name="newRecipe">New recipe</string>
+    <string name="author">Ivanov Ivan</string>
+    <string name="save">Save</string>
+    <string name="CloseFilters">Clear filters</string>
+    <string name="added_to_bookmarks">Added to bookmarks</string>
+    <string name="dell_to_bookmarks">Removed from bookmarks</string>
+
+
+
+
+
+
+    <string name="EUROPEAN">European</string>
+    <string name="ASIAN">Asian</string>
+    <string name="PANASIA">PanAsia</string>
+    <string name="EASTERN">Eastern</string>
+    <string name="AMERICAN">American</string>
+    <string name="RUSSIAN">Russian</string>
+    <string name="MEDITERRANEAN">Mediterranean</string>
+
+
+    <string name="content_description_search">search recipe button</string>
+    <string name="content_description_filter">filter recipes button</string>
+    <string name="content_description_add">add recipe button</string>
+    <string name="content_description_favorites">favorites recipe button</string>
+    <string name="content_description_recipes">all recipes button</string>
+    <string name="content_description_image">add image button</string>
+    <string name="content_description_save">save recipe button</string>
 
 
 </resources>

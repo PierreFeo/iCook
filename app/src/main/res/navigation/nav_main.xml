@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/feedFragment">
+
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="ru.netology.icook.UI.FeedFragment"
+        android:label="@string/recipes"
+        tools:layout="@layout/feed_fragment">
+
+
+        <action
+            android:id="@+id/action_feedFragment_to_recipeDetailedFragment"
+            app:destination="@id/recipeDetailedFragment" />
+    </fragment>
+
+    <fragment
+
+        android:id="@+id/newRecipeFragment"
+        android:name="ru.netology.icook.UI.NewRecipeFragment"
+        android:label="@string/newRecipe"
+        tools:layout="@layout/new_recipe_fragment">
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesRecipeFragment"
+        android:name="ru.netology.icook.UI.FavoritesRecipeFragment"
+        android:label="@string/favorites" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/recipeDetailedFragment"
+        android:name="ru.netology.icook.UI.RecipeDetailedFragment"
+        android:label="RecipeDetailedFragment" />
+
+
+</navigation>

@@ -2,6 +2,46 @@
     <string name="app_name">icook</string>
     <string name="title">Тыквенный суп</string>
     <string name="title_dsc">Классический, очень легкий тыквенный суп, который можно быстро приготовить. Густой, со сладким вкусом тыквы и великолепными пикантными оттенками!</string>
+    <string name="search">Поиск</string>
+    <string name="filter">Фильтр</string>
+    <string name="favorites">Избранное</string>
+    <string name="add">Добавить</string>
+    <string name="allrecpies">Все рецпеты</string>
+    <string name="recipe_title">Название рецепта</string>
+    <string name="author_recipe">Автор</string>
+    <string name="category_recipe">Категория рецепта</string>
+    <string name="category_menu">Категория рецпета</string>
+    <string name="add_image">Добавить фото</string>
+    <string name="save_recipe">Сохранить</string>
+    <string name="recipe_content">Текст рецепта..</string>
+    <string name="remove">Удалить</string>
+    <string name="edit">Редактировать</string>
+    <string name="cant_be_empty">Все поля должны быть заполены</string>
+    <string name="recipes">Рецепты</string>
+    <string name="newRecipe">Новый рецепт</string>
+    <string name="author">Иванов Иван Иванович</string>
+    <string name="save">Сохранить</string>
+    <string name="CloseFilters">Очистить фильтры</string>
+    <string name="added_to_bookmarks">Добавлено в закладки</string>
+    <string name="dell_to_bookmarks">Удалено из закладок</string>
 
+
+
+    <string name="EUROPEAN">Европейская</string>
+    <string name="ASIAN">Азиатская</string>
+    <string name="PANASIA">Паназиатская</string>
+    <string name="EASTERN">Восточная</string>
+    <string name="AMERICAN">Американская</string>
+    <string name="RUSSIAN">Русская</string>
+    <string name="MEDITERRANEAN">Средиземноморская</string>
+
+
+    <string name="content_description_search">Кнопка поиск рецепта</string>
+    <string name="content_description_filter">Кнопка фильтер рецептов</string>
+    <string name="content_description_add">Кнопка добавить рецпет</string>
+    <string name="content_description_favorites">Кнопка избранные рецепты</string>
+    <string name="content_description_recipes">Кнопка все рецепты </string>
+    <string name="content_description_image">Кнопка добавить изображение</string>
+    <string name="content_description_save">Кнопка сохранить рецпет</string>
 
 </resources>

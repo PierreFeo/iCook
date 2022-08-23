@@ -3,101 +3,118 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="@dimen/common_spacing_16dp">
+    android:layout_height="wrap_content"
+    android:padding="8dp">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/picture_layout"
-        android:layout_width="0dp"
-        android:layout_height="520dp"
+        android:id="@+id/pictureLayoutConst"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
         android:background="@drawable/my_back"
-        android:clipToOutline="true"
+        android:backgroundTint="@android:color/darker_gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/preview_recipe"
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/previewRecipeImage"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:riv_corner_radius="30dip"
+            app:riv_tile_mode="clamp"
             tools:srcCompat="@drawable/ic_launcher_background" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/title_background"
+
+        <TextView
+            android:id="@+id/categoryRecipeTextView"
+            style="@style/Widget.AppTheme.MyText"
             android:layout_width="0dp"
-            android:layout_height="160dp"
-            android:layout_marginStart="@dimen/common_spacing_24dp"
-            android:layout_marginEnd="@dimen/common_spacing_24dp"
-            android:layout_marginBottom="@dimen/common_spacing_24dp"
-            android:background="@drawable/my_back"
-            android:backgroundTint="@color/white"
-            app:layout_constraintBottom_toBottomOf="@id/picture_layout"
-            app:layout_constraintEnd_toEndOf="@id/picture_layout"
-            app:layout_constraintStart_toStartOf="@id/picture_layout">
-
-            <TextView
-                android:id="@+id/title_recipe"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/common_spacing_24dp"
-                android:ellipsize="end"
-                android:fontFamily="@font/rigatoni"
-                android:text="@string/title"
-                android:textSize="@dimen/text_size_32sp"
-                app:layout_constraintEnd_toEndOf="@id/title_background"
-                app:layout_constraintStart_toStartOf="@id/title_background"
-                app:layout_constraintTop_toTopOf="@id/title_background">
-
-            </TextView>
-
-            <TextView
-                android:id="@+id/description_recipe"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:ellipsize="end"
-                android:padding="@dimen/common_spacing_16dp"
-                android:text="@string/title_dsc"
-                app:layout_constraintEnd_toEndOf="@id/title_background"
-                app:layout_constraintStart_toStartOf="@id/title_background"
-                app:layout_constraintTop_toBottomOf="@id/title_recipe">
-
-            </TextView>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_spacing_16dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="1"
+            android:textSize="15dp"
+            android:text="Гордон Рамзи Сергеевич"
+            app:layout_constraintBottom_toBottomOf="@id/favoritesButtonImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/favoritesButtonImageView" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/titleRecipeTextView"
+            style="@style/Widget.AppTheme.MyText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_spacing_16dp"
+            android:layout_marginTop="@dimen/common_spacing_16dp"
+            android:layout_marginEnd="48dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="5"
+            android:text="@string/title"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/authorRecipeTextView">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/likes"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginEnd="@dimen/common_spacing_48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        </com.google.android.material.textview.MaterialTextView>
+
+        <TextView
+            android:id="@+id/authorRecipeTextView"
+            style="@style/Widget.AppTheme.MyText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_spacing_16dp"
+            android:layout_marginTop="@dimen/common_spacing_16dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="1"
+            android:text="Гордон Рамзи Сергеевич"
+            app:layout_constraintEnd_toStartOf="@id/moreMenuIconButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/likes_button"
-            style="@style/Widget.AppTheme.LikeButton"
+            android:id="@+id/favoritesButtonImageView"
+            style="@style/Widget.AppTheme.MyBookmarkButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/common_spacing_16dp"
+            android:layout_marginBottom="@dimen/common_spacing_16dp"
             android:checkable="true"
-            app:icon="@drawable/ic_like_24dp"
-            app:iconSize="38dp"
+            android:text="Сохранить"
+            android:textColor="@color/my_color_basic_dark_gray_day"
+            app:icon="@drawable/ic_bookmark_24dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <Button
+            android:id="@+id/moreMenuIconButton"
+            style="@style/Widget.AppTheme.MyButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="@dimen/common_spacing_16dp"
+            android:layout_marginEnd="@dimen/common_spacing_16dp"
+            app:icon="@drawable/ic_baseline_more_vert_24"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

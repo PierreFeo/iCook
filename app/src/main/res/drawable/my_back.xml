@@ -1,10 +1,16 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="#0ff"/> //цвет по вкусу
-    <size android:width="100dp" android:height="100dp"/> //размер по вкусу
+    <solid
+
+        android:color="@color/my_color" />
+    //цвет по вкусу
+    <size
+        android:width="100dp"
+        android:height="100dp" />
+    //размер по вкусу
 
     <!--Так (каждый угол по отдельности)-->
 
 
     <!--Или так (все углы за раз)-->
-    <corners android:radius="30dp"/>
+    <corners android:radius="30dp" />
 </shape>

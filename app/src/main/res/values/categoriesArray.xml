@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categories_array">
+        <item>@string/MEDITERRANEAN</item>
+        <item>@string/RUSSIAN</item>
+        <item>@string/AMERICAN</item>
+        <item>@string/PANASIA</item>
+        <item>@string/ASIAN</item>
+        <item>@string/EUROPEAN</item>
+        <item>@string/EASTERN</item>
+    </string-array>
+
+</resources>
