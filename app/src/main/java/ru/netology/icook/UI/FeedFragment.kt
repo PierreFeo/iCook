@@ -10,7 +10,6 @@ import androidx.core.view.iterator
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
-import androidx.navigation.NavDestination
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.chip.Chip
 import ru.netology.icook.R
@@ -83,17 +82,32 @@ class FeedFragment() : Fragment(), SearchView.OnQueryTextListener {
 
         val ids = binding.chipGroup.checkedChipIds
         for (index in ids) {
-
             val chip: Chip = binding.chipGroup.findViewById(index)
 
             // Set the chip checked change listener
             chip.setOnCheckedChangeListener { view, isChecked ->
-                if (!isChecked) binding.closeFiltersButtonImageView.visibility = View.VISIBLE
                 viewModel.setCategoryList(view.text.toString(), isChecked)
+
+
+                //Search unchecked chips
+                var countUncheckedChips = 0
+                for (i in ids) {
+                    val allChips = binding.chipGroup.findViewById(i) as Chip
+                    if (!allChips.isChecked) {
+                        countUncheckedChips++
+                    }
+                }
+                with(binding) {
+                    if (countUncheckedChips == 0) closeFiltersButtonImageView.visibility =
+                        View.GONE else closeFiltersButtonImageView.visibility = View.VISIBLE
+                    Log.d("unchecked chips", countUncheckedChips.toString())
+                }
             }
         }
 
         return binding.root
+
+
     }
 
 
@@ -152,5 +166,6 @@ class FeedFragment() : Fragment(), SearchView.OnQueryTextListener {
         }
         return true
     }
+
 
 }
